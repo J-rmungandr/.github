@@ -1,32 +1,31 @@
-labels:
-  - name: area:mobile
-    color: "1f77b4"
-  - name: area:api
-    color: "ff7f0e"
-  - name: area:infra
-    color: "2ca02c"
-  - name: area:data
-    color: "9467bd"
-  - name: area:design
-    color: "8c564b"
-  - name: type:bug
-    color: "d73a4a"
-    description: Problème à corriger
-  - name: type:feature
-    color: "a2eeef"
-    description: Nouvelle fonctionnalité
-  - name: type:rfc
-    color: "c2e0c6"
-    description: Proposition technique
-  - name: type:tech-debt
-    color: "fbca04"
-    description: Dette technique
-  - name: P0
-    color: "b60205"
-    description: Critique
-  - name: P1
-    color: "d93f0b"
-    description: Haute priorité
-  - name: P2
-    color: "e4e669"
-    description: Normale
+- name: area:mobile
+  color: "1f77b4"
+- name: area:api
+  color: "ff7f0e"
+- name: area:infra
+  color: "2ca02c"
+- name: area:data
+  color: "9467bd"
+- name: area:design
+  color: "8c564b"
+- name: type:bug
+  color: "d73a4a"
+  description: Problème à corriger
+- name: type:feature
+  color: "a2eeef"
+  description: Nouvelle fonctionnalité
+- name: type:rfc
+  color: "c2e0c6"
+  description: Proposition technique
+- name: type:tech-debt
+  color: "fbca04"
+  description: Dette technique
+- name: P0
+  color: "b60205"
+  description: Critique
+- name: P1
+  color: "d93f0b"
+  description: Haute priorité
+- name: P2
+  color: "e4e669"
+  description: Normale
