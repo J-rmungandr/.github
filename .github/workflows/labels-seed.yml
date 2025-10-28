@@ -1,5 +1,4 @@
 name: Seed Labels
-
 on:
   workflow_dispatch:
 
@@ -8,20 +7,23 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: write     # <-- nécessaire pour créer/mettre à jour des labels
+      issues: write   # nécessaire pour créer/mettre à jour des labels
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Debug list
+      - name: Debug GitHub API (list labels)
         run: |
-          pwd
-          ls -la
-          cat labels.yml
+          echo "Repo: $GITHUB_REPOSITORY"
+          curl -s -o /dev/stderr -w "HTTP %{http_code}\n" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/labels
 
       - name: Sync labels
-        uses: EndBug/label-sync@v2
+        uses: crazy-max/ghaction-github-labeler@v5
         with:
-          config-file: labels.yml
-          delete-other-labels: false
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: labels.yml   # chemin relatif à la racine du repo
+          skip-delete: true         # ne supprime pas les labels existants
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
