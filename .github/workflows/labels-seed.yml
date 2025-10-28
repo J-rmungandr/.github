@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: write   # nécessaire pour créer/mettre à jour des labels
+      issues: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
       - name: Sync labels
         uses: crazy-max/ghaction-github-labeler@v5
         with:
-          config-file: labels.yml   # chemin relatif à la racine du repo
-          skip-delete: true         # ne supprime pas les labels existants
+          yaml-file: labels.yml   # <-- remplace 'config-file' par 'yaml-file'
+          skip-delete: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
