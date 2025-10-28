@@ -1,13 +1,27 @@
 name: Seed Labels
 
 on:
-  workflow_dispatch:  # permet de le lancer manuellement
+  workflow_dispatch:
 
 jobs:
   seed:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write     # <-- nécessaire pour créer/mettre à jour des labels
     steps:
-      - uses: EndBug/label-sync@v2
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Debug list
+        run: |
+          pwd
+          ls -la
+          cat labels.yml
+
+      - name: Sync labels
+        uses: EndBug/label-sync@v2
         with:
           config-file: labels.yml
           delete-other-labels: false
+          github-token: ${{ secrets.GITHUB_TOKEN }}
