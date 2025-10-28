@@ -1,0 +1,40 @@
+name: Bug
+description: Rapporter un bug reproductible
+labels: ["type:bug", "P2"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Décris le problème observé.
+      placeholder: Comportement observé vs attendu
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      description: Détaille les étapes
+      placeholder: "1) ...\n2) ...\n3) ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / SHA
+      description: Tag ou commit
+  - type: dropdown
+    id: area
+    attributes:
+      label: Zone
+      options:
+        - area:mobile
+        - area:api
+        - area:infra
+        - area:design
+        - area:data
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Stacktrace
+      render: shell

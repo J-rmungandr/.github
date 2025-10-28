@@ -1,0 +1,35 @@
+name: Reusable • Terraform CI
+
+on:
+  workflow_call:
+    inputs:
+      working_directory:
+        required: false
+        type: string
+        default: "./terraform"
+    secrets:
+      TF_API_TOKEN:
+        required: false
+      CLOUD_CREDENTIALS_JSON:
+        required: false
+
+jobs:
+  tf-ci:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    defaults:
+      run:
+        working-directory: ${{ inputs.working_directory }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+      - name: Auth Cloud (OIDC)
+        if: ${{ secrets.CLOUD_CREDENTIALS_JSON != '' }}
+        run: echo "${{ secrets.CLOUD_CREDENTIALS_JSON }}" > creds.json
+      - run: terraform fmt -check -recursive
+      - run: terraform init -input=false
+      - run: terraform validate
+      - run: terraform plan -input=false

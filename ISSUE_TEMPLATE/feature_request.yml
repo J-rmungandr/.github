@@ -1,0 +1,32 @@
+name: Feature
+description: Demander une nouvelle fonctionnalité
+labels: ["type:feature", "P2"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte / Problème
+      description: Quel besoin utilisateur ? Quel problème ?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition
+      description: Solution envisagée (user stories, critères d'acceptation)
+      placeholder: "En tant que [persona], je veux [action], afin de [valeur]."
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / Scope
+      description: Domaines impactés (mobile, API, infra, data, design…)
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Critères d’acceptation
+      options:
+        - label: Scénarios happy path définis
+        - label: Tests et métriques identifiés
+        - label: Garde-fous sécurité considérés

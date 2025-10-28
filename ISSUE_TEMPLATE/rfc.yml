@@ -1,0 +1,35 @@
+name: RFC
+description: Proposition d'architecture / décision technique
+labels: ["type:rfc", "P1"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Résumé
+      description: TL;DR de la proposition
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Pourquoi ? Quel problème résolu ? Alternatives ?
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Design / Architecture
+      description: Diagrammes, flux, choix technos, contraintes
+    validations:
+      required: true
+  - type: textarea
+    id: rollout
+    attributes:
+      label: Plan de déploiement
+      description: Migration, rétrocompatibilité, rollback, monitoring
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risques / Sécurité
+      description: Données, permissions, coûts, performance
