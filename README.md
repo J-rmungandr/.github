@@ -210,7 +210,7 @@ Milestones partagés entre dépôts :
 |[burrito-shared](https://github.com/J-rmungandr/burrito-shared)|Utilise le pipeline Node CI|
 |[burrito-web-admin](https://github.com/J-rmungandr/burrito-web-admin)|Reçoit les labels + PR template|
 
-## ## 💬 Contribution
+## 💬 Contribution
 
 Ce dépôt est ouvert aux contributions internes :
 
