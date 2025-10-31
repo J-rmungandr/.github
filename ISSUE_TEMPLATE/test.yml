@@ -1,0 +1,9 @@
+# .github/ISSUE_TEMPLATE/test.yml
+name: Test issue
+description: Juste un test
+labels: ["test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ceci est un test de template.
