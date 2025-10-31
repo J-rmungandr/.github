@@ -1,8 +1,8 @@
 <!-- .github/profile/README.md -->
 
 <p align="center">
-  <img src="https://github.com/J-rmungandr/.github/tree/main/profile/j-rmungandr.png" height="84" alt="J-rmungandr" />
-  <h1 align="center">J-rmungandr</h1>
+  <!-- <img src="https://github.com/J-rmungandr/.github/tree/main/profile/j-rmungandr.png" height="84" alt="J-rmungandr" />
+  <h1 align="center">J-rmungandr</h1> -->
   <p align="center">
     <em>Building reliable, data-driven products — privately, professionally.</em>
   </p>
@@ -33,13 +33,14 @@ La plupart de nos dépôts sont **privés**. Cette page présente notre identit�
 
 | Dépôt | Description | Statut | Accès | Lien |
 |---|---|---:|---:|---|
-| **burrito-app** | Application mobile (React Native) centrée sur la cuisine sociale (planning de repas, listes de courses, interactions de cercle). | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-app |
-| **burrito-docs** | Documentation produit & technique (UML, architecture, guides contrib). | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-docs |
-| **infra-gcp** | Modules infra (GCP, Terraform, CI/CD, observabilité). | Stable | 🔒 Privé | https://github.com/J-rmungandr/infra-gcp |
-| **templates** | Templates réutilisables (README, issues, PRs, CODEOWNERS, labels). | Stable | 🔓 Public | https://github.com/J-rmungandr/templates |
-| **guidelines** | Normes internes (sécurité, revues de code, style JS/TS, Git branching). | Évolutif | 🔒 Privé | https://github.com/J-rmungandr/guidelines |
-
-> ✏️ **Personnalisez** : Ajoutez/retirez des lignes selon vos dépôts. Les liens privés ne sont visibles que pour les membres autorisés.
+| **burrito-app-mobile** | Burrito App Mobile est l’application React Native du projet Burrito. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-app-mobile |
+| **burrito-api-gateway** | API principale du projet Burrito. Elle centralise les endpoints utilisés par les applications (mobile, web, admin) et coordonne les échanges entre les différents microservices. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-api-gateway |
+| **burrito-design** | Design system, maquettes et identité visuelle du projet Burrito. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-design |
+| **burrito-docs** | Documentation centrale, vision produit et gouvernance technique du projet Burrito. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-docs |
+| **burrito-infra** | Infrastructure cloud du projet Burrito, basée sur Terraform et Google Cloud Platform (GCP). | Stable | 🔒 Privé  | https://github.com/J-rmungandr/burrito-infra |
+| **burrito-service-recipes** | Microservice de gestion des recettes pour l’écosystème Burrito. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-service-recipes |
+| **burrito-shared** | Librairie commune à tout l’écosystème Burrito. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-shared |
+| **burrito-web-admin** | Interface d’administration web du projet Burrito. | Actif | 🔒 Privé | https://github.com/J-rmungandr/burrito-web-admin |
 
 ---
 
