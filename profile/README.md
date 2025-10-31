@@ -1,8 +1,7 @@
 <!-- .github/profile/README.md -->
 
 <p align="center">
-  <!-- Remplacez par votre logo si vous en avez un -->
-  <!-- <img src="https://raw.githubusercontent.com/J-rmungandr/.github/main/profile/logo.png" height="84" alt="J-rmungandr" /> -->
+  <img src="https://github.com/J-rmungandr/.github/tree/main/profile/j-rmungandr.png" height="84" alt="J-rmungandr" />
   <h1 align="center">J-rmungandr</h1>
   <p align="center">
     <em>Building reliable, data-driven products — privately, professionally.</em>
@@ -18,9 +17,9 @@
 
 ## À propos
 
-J-rmungandr est une organisation tech orientée **data** et **produits**.  
+Jǫrmungandr est une organisation tech orientée **data** et **produits**.  
 Nous concevons des applications robustes et exigeantes, avec un soin particulier apporté à la **qualité**, la **sécurité** et la **documentation**.  
-La plupart de nos dépôts sont **privés**. Cette page présente notre identité, nos standards, et — pour les collaborateurs autorisés — un accès rapide aux principaux projets.
+La plupart de nos dépôts sont **privés**. Cette page présente notre identité, nos standards, et pour les collaborateurs autorisés, un accès rapide aux principaux projets.
 
 > 🛡️ **Confidentialité**  
 > Les informations sensibles (code, datasets, roadmaps détaillées) restent privées par défaut.  
@@ -68,11 +67,11 @@ La plupart de nos dépôts sont **privés**. Cette page présente notre identit�
 ## Points de contact
 
 - **Discussions** : [Espace discussions](https://github.com/orgs/J-rmungandr/discussions)
-- **Support sécurité** : security@j-rmungandr.example  <!-- remplacez par votre email -->
-- **Partenariats** : contact@j-rmungandr.example       <!-- remplacez par votre email -->
+- **Support sécurité** : delescluse.g@gmail.com
+- **Partenariats** : delescluse.g@gmail.com
 
 ---
 
 <p align="center">
-  <sub>© J-rmungandr — Tous droits réservés. • Cette page présente l’organisation sans divulguer d’informations sensibles.</sub>
+  <sub>© J-rmungandr — Tous droits réservés.</sub>
 </p>
