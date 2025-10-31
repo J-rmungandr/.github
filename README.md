@@ -206,7 +206,7 @@ Milestones partagés entre dépôts :
 |[burrito-app-mobile](https://github.com/J-rmungandr/burrito-app-mobile)|Utilise `reusable-react-ci.yml`|
 |[burrito-api-gateway](https://github.com/J-rmungandr/burrito-api-gateway)|Utilise `reusable-node-ci.yml`|
 |[burrito-infra](https://github.com/J-rmungandr/burrito-infra)|Utilise `reusable-terraform-ci.yml`|
-|[burrito-design](https://github.com/J-rmungandr/burrito-design)Reçoit les labels et templates communs|
+|[burrito-design](https://github.com/J-rmungandr/burrito-design)|Reçoit les labels et templates communs|
 |[burrito-shared](https://github.com/J-rmungandr/burrito-shared)|Utilise le pipeline Node CI|
 |[burrito-web-admin](https://github.com/J-rmungandr/burrito-web-admin)|Reçoit les labels + PR template|
 
@@ -232,5 +232,6 @@ Organisation : [@J-rmungandr](https://github.com/J-rmungandr)
 
 --- 
 
-🧾 Licence
+## 🧾 Licence
+
 This project is licensed under the CC BY-NC-ND 4.0 License - see the [LICENSE](./LICENSE) file for details.
